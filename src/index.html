@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <title>yummy</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black overflow-hidden">
+    <div
+      class="fixed top-0 left-0 right-0 bottom-0 vh-100 z-50 bg-black flex loading "
+    >
+      <span
+        class="loader translate-y-[220px] translate-x-0 justify-center text-white/85"
+      ></span>
+    </div>
+    <div class="container">
+      <div class="whole-nav side flex z-30 transition-transform ease-in-out">
+        <div class="side-inner p-[90px] bg-black">
+          <div class="links -translate-y-[20%] translate-x-[-70px]" >
+            <h3 class="text-white pt-14 cursor-pointer search">Search</h3>
+            <h3 class="text-white pt-4 cursor-pointer category">Categories</h3>
+            <h3 class="text-white pt-4 cursor-pointer area">Area</h3>
+            <h3 class="text-white pt-4 cursor-pointer ingredient">Ingredients</h3>
+            <h3 class="text-white pt-4 cursor-pointer contact">Contact Us</h3>
+            <div class="second-part mt-44">
+              <i class="fa-brands fa-facebook text-slate-200 pe-1"></i>
+              <i class="fa-brands fa-twitter text-slate-200 pe-1"></i>
+            <i class="fa-solid fa-globe text-slate-200 pb-3"></i>
+            <p class="text-white ">Copyright Â© 2019 <br>All Rights<br/>
+              Reserved.</p>
+          
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center bg-slate-200 p-4">
+          <img src="img/logo.png" class=" mt-14 w-14" />
+          <i
+            class="fa-solid fa-bars text-[35px] mt-28 cursor-pointer iconny"
+          ></i>
+          <div class="world flex flex-col mt-40 text-center">
+            <i class="fa-solid fa-globe text-black pb-3"></i>
+            <i class="fa-solid fa-share-nodes text-black"></i>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="search-input flex invisible ">
+        <input
+          type="text"
+          id="first-input"
+          class="p-1 my-5 ms-24 ps-2 text-white w-[45%] bg-black border border-slate-600 focus:shadow-blue-400 focus:shadow-2xl rounded-lg"
+          placeholder="search By Name.."
+        />
+        <input
+          type="text"
+          class="p-1 my-5 ms-20 ps-2 text-white w-[40%] bg-black border border-slate-600 focus:shadow-blue-400 focus:shadow-2xl rounded-lg "
+          placeholder="search By first letter.."
+        />
+      </div>
+
+      <div class="aklat flex flex-wrap gap-5 bg-black container justify-center ">
+
+        </div>
+      </div>
+
+      <div
+        class="yallahwy  flex flex-wrap gap-4 bg-black container justify-center invisible">
+        <form  class=" flex flex-wrap ms-36">
+              <div class="w-full md:w-1/2 px-3  md:mb-0 ">
+                  <input class=" block  bg-gray-200 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white  " id="input1" type="text" placeholder="Enter your name ">
+                  <div class="bg-red-300 invisible zhgt1 m-2 rounded-md w-[50%] text-center p-2"><h2 class=" text-white ">Enter valid Name</h2></div>
+                  </div>
+              <div class="w-full md:w-1/2 px-3  md:mb-0">
+                  <input class=" block  bg-gray-200 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white" id="input2" type="text" placeholder="Enter your Phone">
+                  <div class="bg-red-300 invisible zhgt2  m-2 rounded-md w-[50%] text-center p-2"><h2 class=" text-white ">Enter valid phone number</h2></div>
+                
+                </div>
+              <div class="w-full md:w-1/2 px-3  md:mb-0">
+                <input class=" block  bg-gra300 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white" id="input3" type="password" placeholder="Enter yourPassword">
+                <div class="bg-red-300 invisible zhgt3 m-2 rounded-md w-[50%] text-center p-2"><h2 class=" text-white ">Enter valid password *Minimum eight characters,<br> at least one letter and one number:*</h2></div>
+                
+              </div>
+          
+          
+            <div class="w-full md:w-1/2 px-3  md:mb-0">
+              <input class=" block  bg-gray-200 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white" id="input4"  type="email" placeholder="Enter your Email">
+              <div class="bg-red-300 invisible zhgt4 m-2 rounded-md w-[50%] text-center p-2"><h2 class="text-white ">Email not valid *exemple@yyy.zzz</h2></div>
+          </div>
+              <div class="w-full md:w-1/2 px-3  md:mb-0">
+                  <input class=" block  bg-gray-200 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white" id="input5" type="number" placeholder="Enter your Age">
+                  <div class="bg-red-300 invisible zhgt5 m-2 rounded-md w-[50%] text-center p-2"><h2 class="  text-white">Enter valid age</h2></div>
+                </div>
+              <div class="w-full md:w-1/2 px-3  md:mb-0">
+                  <input class=" block  bg-gray-200 text-gray-700 border rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white" id="input6" type="password" placeholder="RePassword">
+                  <div class="bg-red-300 invisible zhgt6 m-2 rounded-md w-[50%] text-center p-2"><h2 class="text-white ">Enter valid repassword</h2></div>
+                </div>
+
+                <button  class="bg-green-500 hover:bg-green-700 text-white ms-20 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline submit hover:cursor-pointer" type="submit">
+                  Submit
+              </button>
+          
+          
+      </form>
+
+     
+      
+       
+      </div>
+    
+
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
