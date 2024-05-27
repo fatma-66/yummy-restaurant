@@ -34,16 +34,20 @@ $(".whole-nav i ").click(function () {
 
   if ($(".whole-nav").css("left") == "0px") {
     $(".whole-nav ").animate({ left: -sideWidth }, 500);
+    $(".iconny").addClass("fa-x");
+    $(".iconny").removeClass("fa-x");
+    
 
     
     
   } else {
     $(".whole-nav ").animate({ left: "0px" }, 500);
-   
+    $(".iconny").addClass("fa-x");
+    $(".iconny").removeClass("fa-bars-staggered");
   }
 
-  $(".iconny").removeClass("fa-bars-staggered");
-  $(".iconny").addClass("fa-x");
+  
+  
  
   
 });
@@ -53,8 +57,12 @@ function closeNav() {
 
   if ($(".whole-nav").css("left") == "0px") {
     $(".whole-nav ").animate({ left: -sideWidth }, 500);
+    $(".iconny").addClass("fa-x");
+    $(".iconny").removeClass("fa-x");
   } else {
     $(".whole-nav ").animate({ left: "0px" }, 500);
+    $(".iconny").addClass("fa-x");
+    $(".iconny").removeClass("fa-bars-staggered");
   }
 }
 
@@ -129,7 +137,7 @@ searchMeals();
 
 async function searchByName(mealName) {
   try {
-    $(".loading").slideDown(0)
+    // $(".loading").slideDown(0)
     const response = await fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`
     );
@@ -155,7 +163,7 @@ async function searchByName(mealName) {
         
     
 
-        $(".loading").slideUp(800)
+        // $(".loading").slideUp(800)
     // Process the fetched data as needed
   } catch (error) {
     console.error("Error fetching meals:", error);
@@ -517,10 +525,13 @@ function displayIngredientData(container){
         let box = "";
         for (let i = 0; i < container.length; i++) {
           const description = container[i].strDescription ? container[i].strDescription.split(" ").slice(0, 20).join(" ") : "";
-          box += `  <div class="text-center cursor-pointer rounded-lg"   onclick="getCategoriesMeals('${container[i].strIngredient}')" >
+          box += `  <div class="text-center cursor-pointer rounded-lg flex justify-center "   onclick="getCategoriesMeals('${container[i].strIngredient}')" >
+          
+          <div class="flex flex-col">
           <i class="fa-solid fa-drumstick-bite text-[70px]  text-white  "></i>
-          <h3 class="text-white pt-4 ">${container[i].strIngredient}</h3>
-          <p class="text-white ">${description}</p>
+          <h3 class="text-white pt-4">${container[i].strIngredient}</h3>
+          <p class="text-white text-wrap ">${description}</p>
+          </div>
 
         </div> `;
       
